@@ -1,7 +1,9 @@
 # 🚗 Ford Car Price Prediction
 
 A Machine Learning web application that predicts the price of a Ford car based on its specifications.
+## 🖥️ Application Screenshot
 
+![Ford Car Price Prediction](screenshot.png.png)
 ## 📌 Project Overview
 
 This project uses Machine Learning to predict the price of a Ford car using:
