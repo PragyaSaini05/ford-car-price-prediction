@@ -53,6 +53,24 @@ The preprocessing and model are combined using a Scikit-learn Pipeline.
 | MPG | Miles per gallon |
 | Engine Size | Engine capacity |
 
+## 📈 Model Evaluation
+
+## 📈 Model Evaluation
+
+The Linear Regression model was evaluated on the test dataset using R² Score, Mean Absolute Error (MAE), and Root Mean Squared Error (RMSE).
+
+| Metric | Score |
+|---|---:|
+| R² Score | 0.8388 |
+| MAE | 1,398.29 |
+| RMSE | 1,900.92 |
+
+### Evaluation Metrics
+
+- **R² Score:** 0.8388 — the model explains approximately 83.88% of the variation in car prices.
+- **MAE:** 1,398.29 — the average absolute difference between predicted and actual prices.
+- **RMSE:** 1,900.92 — the square root of the average squared prediction error.
+
 ## 🚀 Run Locally
 
 ### Clone the repository

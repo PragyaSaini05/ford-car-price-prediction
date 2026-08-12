@@ -76,10 +76,38 @@ model.fit(X_train, y_train)
 # 8. Test model
 y_pred = model.predict(X_test)
 
+from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
+import numpy as np
+# 8. Make predictions
+y_pred = model.predict(X_test)
+
+# 9. Calculate evaluation metrics
 r2 = r2_score(y_test, y_pred)
+mae = mean_absolute_error(y_test, y_pred)
+rmse = mean_squared_error(y_test, y_pred) ** 0.5
+
+print("\nModel Evaluation")
+print("-------------------------")
+print(f"R2 Score : {r2:.4f}")
+print(f"MAE      : {mae:.2f}")
+print(f"RMSE     : {rmse:.2f}")
+print("-------------------------")
+
+# 10. Save trained model
+joblib.dump(model, "model.pkl")
+
+print("Model saved as model.pkl")
 
 print("Model trained successfully!")
+print("--------------------------------")
 print("R2 Score:", r2)
+print("MAE:", mae)
+print("RMSE:", rmse)
+print("--------------------------------")
+
+joblib.dump(model, "model.pkl")
+
+print("Model saved as model.pkl")
 
 # 9. Save trained model
 joblib.dump(model, "model.pkl")
